@@ -6,7 +6,7 @@
         
         
         {
-            //    Console.WriteLine(" Welcome Address Book System ");
+                Console.WriteLine(" Welcome Address Book System ");
             //    //creating object of addressbook
             //    AddressBook addressBook = new AddressBook();
             //    //getting Op in Constructor with paratmers
@@ -21,6 +21,12 @@
             takeInputAndAddToContacts(addressBook);
             // called Print method 
             addressBook.print();
+            Console.ReadLine();
+            Console.WriteLine("Enter FirstName of Contact to be edited");
+            string firstNameOfContactToBeEdited = Console.ReadLine();
+            Console.WriteLine("Enter LastName of Contact to be edited");
+            string lastNameOfContactToBeEdited = Console.ReadLine();
+            addressBook.edit(firstNameOfContactToBeEdited, lastNameOfContactToBeEdited);
             Console.ReadLine();
 
         }
